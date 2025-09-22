@@ -7,5 +7,7 @@ class P14_Squared {
 
         // Output the formula and result
         // Write the program here
+        $area = $side * $side;
+        echo "The area of the square is ".$area."\n";
     }
 }

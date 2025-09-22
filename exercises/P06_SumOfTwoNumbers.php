@@ -8,6 +8,7 @@ class P06_SumOfTwoNumbers {
 
         // Calculate the sum and output the result
         // Write your program here
-        
+        $suma = $numA + $numB;
+        echo "The sum of the numbers is ".$suma."\n";
     }
 }
