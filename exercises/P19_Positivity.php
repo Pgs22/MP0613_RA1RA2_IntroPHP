@@ -6,18 +6,16 @@ class P19_Positivity
     {
         // Write your code here
         // Prompt the user for input
-        echo "Give a number: ";
+        echo "Give a number: \n";
        
         // Get input from the user
         $input = trim(fgets($GLOBALS['STDIN'] ?? STDIN));
 
         // Check year value
-        if((int)$input >= 0){
+        if((float)$input > 0){
             echo "The number is positive.\n";
         }else{
             echo "The number is not positive.\n";
-        }
-        
-       
+        } 
     }
 }
