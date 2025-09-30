@@ -7,10 +7,10 @@ class P25_Password
         // Write your code here
         echo "Password?\n";
         $userPass = trim(fgets($GLOBALS['STDIN'] ?? STDIN));
-        if ($userPass === 'Wattlebird') {
-            echo "Off With you!";
-        } elseif ($userPass === 'Caput Draconis') {
-            echo "Welcome!";    
+        if ($userPass === "Caput Draconis") {
+            echo "Welcome!";   
+        }else{            
+            echo "Off with you!"; 
         }
     }
 }

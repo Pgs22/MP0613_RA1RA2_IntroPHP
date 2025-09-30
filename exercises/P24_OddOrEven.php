@@ -6,14 +6,12 @@ class P24_OddOrEven
     {
         // Write your code here
         echo "Give a number: \n";
-        $number = (int)trim(fgets($GLOBALS['STDIN'] ?? STDIN));
+        $number = (int)trim(fgets($GLOBALS['STDIN'] ?? STDIN));        
 
-        $resto = $number % 2;
-
-        if($resto === 0){
-            echo $number."\nNumber ".$number." is even.";
+        if($number % 2 === 0){
+            echo "Number is even.";
         } else{
-            echo $number."\nNumber ".$number." is odd.";
+            echo "Number is odd.";
         }
       
     }
