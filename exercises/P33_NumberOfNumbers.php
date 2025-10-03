@@ -5,19 +5,17 @@ class P33_NumberOfNumbers
     public function main(): void
     {
         // Write your code here
+        $count = 0;
         while(true){                        
             echo "Give a number:";
             $input = (int)trim(fgets($GLOBALS['STDIN'] ?? STDIN));
             if($input === 0){
                 break;
-            }
-            if($input < 0){
-                echo "Unsuitable number\n";
+            }else{
+                $count++;
                 continue;
-            }elseif(($input % 2 === 0)){
-                $inputPar = $input * $input;
-                echo $inputPar;
             }
         }
+        echo "Number of numbers: ".$count;
     }
 }
