@@ -6,7 +6,6 @@ class P35_SumOfNumbers
     {
         // Write your code here
         $suma = 0;
-        $media = $suma / 
         while(true){                        
             echo "Give a number:\n";
             $input = (int)trim(fgets($GLOBALS['STDIN'] ?? STDIN));
