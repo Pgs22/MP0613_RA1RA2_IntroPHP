@@ -22,8 +22,8 @@ class P38_AverageOfPositiveNumbers
             }                       
         }
         if($sum > 0){
-        $average = $sum / $count;
-        echo $average."\n";    
+            $average = $sum / $count;
+            echo $average."\n";    
         }else{
             echo "Cannot calculate the average\n";
         }
