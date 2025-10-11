@@ -22,8 +22,8 @@ class P37_AverageOfNumbers
             }                       
         }
         if($count > 0){
-        $average = $sum / $count;
-        echo "Average of the numbers: ".$average."\n";    
+            $average = $sum / $count;
+            echo "Average of the numbers: ".$average."\n";    
         }else{
             echo "Average of the numbers: 0\n";
         }
