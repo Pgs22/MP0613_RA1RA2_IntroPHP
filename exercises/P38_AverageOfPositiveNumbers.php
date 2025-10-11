@@ -5,7 +5,7 @@ class P38_AverageOfPositiveNumbers
     public function main(): void
     {
         // Write your program here
-       $sum = 0;
+        $sum = 0;
         $count = 0;
         
         while(true){                        
