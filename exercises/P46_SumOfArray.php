@@ -11,6 +11,12 @@ class P46_SumOfArray
     public function sumOfNumbersInArray(array $array): int
     {
         // Write your code here
-       
+        $total = 0;
+        
+        foreach ($array as $number) {
+            $total += $number; // Para sumar en cada vuelta el valor encontrado en el array
+        }
+        
+        return $total;
     }
 }
