@@ -5,24 +5,32 @@ class P44_Swap
     public function main(): void
     {
         $array = [1, 3, 5, 7, 9];
+    
+        foreach ($array as $value) {
+                echo $value . "\n";
+        }
 
+        echo "\n";
 
         // Write your code here
+        echo "Give two indices to swap:\n";
         $indicePos1 = -1; 
         $indicePos2 = -1;
 
         
         $inputUser = trim(fgets($GLOBALS['STDIN'] ?? STDIN)); 
-
+        //Usamos funciones: 
+            //array_values() 
+            // array_filter() 
+            // explode() 
+            // (trim) 
         $indice2 = array_values(array_filter(explode(' ', $inputUser), 'trim'));
 
-
+        //Usamos funció count() para saber contar los valores hay dentro del array, si hay dos o más añadimos valores a las variables
         if (count($indice2) >= 2) {
-            // Asignamos los índices por posición (usando tu lógica original)
             $indicePos1 = (int)$indice2[0];
             $indicePos2 = (int)$indice2[1];
         } else {
-            // Si no hay 2 índices, salimos del programa.
             return;
         }
 
@@ -37,7 +45,7 @@ class P44_Swap
             $temp = $array[$indicePos1];            
             // Ahora asignamos el valor de la posición 1 en la posición 2
             $array[$indicePos1] = $array[$indicePos2];            
-            // Ahora usamos el valor guardado y lo asignamos a la posición inicial duplicada
+            // Ahora usamos el valor guardado y lo asignamos a la nueva posición
             $array[$indicePos2] = $temp;
         }
 
