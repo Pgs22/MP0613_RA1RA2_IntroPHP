@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 class P49_SetLanguagePreference {
     private array $allowedLanguages = ['en', 'es', 'fr', 'de'];
